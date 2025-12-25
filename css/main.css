@@ -846,4 +846,17 @@ footer {
     }
 
     /* skill finished */
+    .about {
+        display: none;
+    }
+
+    .price {
+        display: none;
+    }
+    .contact {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
 }
