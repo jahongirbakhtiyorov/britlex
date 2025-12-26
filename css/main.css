@@ -410,7 +410,6 @@ body {
 
 /* price finished */
 /* contact start */
-/* Contact Section */
 .contact {
     padding: 20px 0;
     background: #fff;
@@ -528,180 +527,527 @@ footer {
 }
 
 /* footer finished */
+
 @media only screen and (max-width: 767px) {
+
     .container {
-        max-width: 760px;
+        max-width: 680px;
         width: 100%;
-        margin: 0 auto;
-        padding: 0 0 20px auto;
+        padding: 0 20px;
     }
 
     /* header start */
-    .header-inner-center-list,
+    .header-inner {
+        padding: 20px 0;
+        justify-content: space-between;
+    }
+
+    .header-inner-left-img {
+        width: 89px;
+        height: 45;
+    }
+
+    .header-inner-center {
+        display: none;
+    }
+
     .header-inner-right-link {
         display: none;
     }
 
     .header-inner-left-img-2 {
-        display: flex;
-    }
-
-    .header-inner {
-        justify-content: space-between;
-        padding: 20px 0;
-        margin: 0 0 40px 0;
+        display: block;
+        width: 30px;
+        height: 17px;
     }
 
     /* header finished */
     /* learn start */
-
     .learn-inner {
-        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        padding: 50px 0;
+        position: relative;
     }
 
-
+    .learn-inner-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        order: 1;
+    }
 
     .learn-inner-left-title {
         font-size: 36px;
         font-weight: 600;
-        margin: 0 200px 25px 0;
-        max-width: 632px;
+        margin: 0;
         width: 100%;
+        padding: 0;
     }
 
+
     .learn-inner-left-title-img {
-        top: 50px;
+        width: 60px;
+        height: 60px;
+        position: relative;
+        top: -90px;
         left: 230px;
+        margin-top: 10px;
     }
 
     .learn-inner-left-text {
         font-size: 16px;
         font-weight: 400;
-        margin: 0 0 32px 0;
-
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
 
     .learn-inner-left-link {
-        font-size: 18px;
-        font-weight: 500;
-        padding: 19px 67px;
-        border-radius: 5px;
-        transition: 0.3s ease-in-out;
+        justify-content: left;
+        padding: 20px 60px;
+        font-size: 16px;
+        margin: 30px 0 0 0;
     }
 
-    .learn-inner-left-link:hover {
-        background-color: #2d5f78;
+    .learn-inner-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        order: 2;
+        width: 100%;
+    }
 
+    .learn-inner-right-img {
+        width: 352px;
+        height: 352px;
     }
 
     /* learn finished */
     /* skill start */
+    .skill {
+        padding: 20px 0;
+    }
+
+    .skill-title {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 600;
+        margin: 0 0 50px 0;
+    }
+
+    .skill-inner {
+        width: 100%;
+        padding: 0;
+    }
+
     .skill-inner-list {
-        grid-template-columns: repeat(3, 1fr);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
 
-    .skill-inner-list-item {
-        padding: 20px;
-        max-width: 227px;
-        width: 100%;
-    }
-
-    .speaking {
-        grid-row: span 2;
-    }
-
-    .skill-speaking-img {
-        padding: 30px 7px 0 1px;
-        width: 214px;
-        height: 214px;
-
-    }
-
-    .writing,
-    .reading {
-        max-width: 290px;
-        width: 100%;
-    }
-
-    .skill-writing-img {
-        padding: 0 0 0 10px;
-
-    }
-
-    .skill-4 {
-        grid-column: span 2;
+    .skill-inner-list-item.speaking {
+        grid-column: 1 / 1;
+        grid-row: 1 / 3;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 5px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px;
+        border-radius: 10px;
     }
 
-    .skill-inner-list-item-img {
-        max-width: 200px;
-        margin-bottom: 16px;
-    }
-
-    .skill-listening-img {
-        width: 202px;
-        height: 134px;
-    }
-
-    .skill-inner-list-item-title,
-    .skill-4-left-title {
+    .skill-inner-list-item-title {
         font-size: 20px;
+        font-weight: 600;
+        color: #263238;
         margin: 0;
     }
 
-    .skill-inner-list-item-text,
-    .skill-4-left-text {
+    .skill-inner-list-item-text {
         font-size: 13px;
-        margin-bottom: 13px;
+        font-weight: 400;
+        margin: 0 0 15px 0;
     }
+
+    .speaking-text {
+        font-size: 13px;
+        font-weight: 400;
+        margin: 0;
+    }
+
 
     .skill-inner-list-item-link {
-        padding: 14px 40px;
-        font-size: 16px;
-        font-weight: 500;
-        transition: all 0.3s ease;
+        display: inline-block;
+        padding: 10px 25px;
+        font-size: 13px;
+        margin-top: auto;
     }
 
-
-
-    .speaking {
-        grid-row: span 2;
-    }
-
-    .skill-4 {
-        grid-column: span 2;
+    .skill-inner-list-item.writing {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        gap: 10px;
+        justify-content: flex-start;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
     }
 
-    .writing {
-        padding: 14px 0 27px 19px;
+    .skill-writing-img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+
+    .skill-inner-list-item.reading {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
     }
 
     .skill-reading-img {
         width: 216px;
         height: 144px;
+        margin-bottom: 15px;
     }
 
-    .skill-writing-img {
-        padding: 0 0 0 80px;
-        width: 200px;
-        height: 200;
+    .skill-inner-list-item.listening {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 0 10px 10px;
+        border-radius: 10px;
     }
 
-    .skill-inner-list-item-link:hover {
-        background-color: #2d5f78;
+    .skill-4-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 55%;
+        text-align: left;
+    }
 
+    .skill-4-left-title {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .skill-4-left-text {
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    .skill-4-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+    }
+
+    .skill-listening-img {
+        max-width: 202px;
+        height: 134px;
     }
 
     /* skill finished */
+    /*  about start*/
+
+    .about {
+        padding: 20px 0;
+    }
+
+    .about-inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .about-inner-left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-inner-left-title {
+        font-size: 30px;
+        font-weight: 600;
+        margin: 0 0 10px 0;
+    }
+
+    .about-inner-left-text {
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0 0 20px 0;
+    }
+
+    .about-stats {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 50px;
+    }
+
+    .about-stats-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex: 1;
+    }
+
+    .about-stats-number {
+        font-size: 22px;
+        font-weight: 600;
+        margin: 0;
+        color: #2A3246;
+    }
+
+    .about-stats-label {
+        font-size: 13px;
+        font-weight: 400;
+        color: #8F95A5;
+    }
+
+    .about-inner-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-inner-right-img {
+        width: 295px;
+        height: 295px;
+    }
+
+    /* about finished */
+    /* price start */
+    .price {
+        padding: 20px 0;
+    }
+
+    .price-title {
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        margin: 0 0 30px 0;
+    }
+
+    .price-inner {}
+
+    .price-inner-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .price-inner-list-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px 10px;
+        flex: 1;
+        text-align: center;
+    }
+
+    .price-inner-list-item-img {
+        width: 197px;
+        height: 197px;
+        margin: 0 0 15px 0;
+    }
+
+    .price-inner-list-item-img-1 {
+        width: 219px;
+        height: 168px;
+        margin: 0 0 20px 0;
+    }
+
+    .price-inner-list-item-img-2 {
+        width: 210px;
+        height: 210px;
+        margin: 0 0 10px 0;
+    }
+
+    .price-inner-list-item-title {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0 0 12px 0;
+    }
+
+    .price-inner-list-item-text {
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0 0 15px 0;
+    }
+
+    .price-inner-list-item-price {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        padding: 5px 20px;
+        border-radius: 5px;
+        background-color: #EEEEEE;
+    }
+
+    .price-amount {
+        font-size: 22px;
+        font-weight: 400;
+        color: #263238;
+    }
+
+    .price-period {
+        font-size: 16px;
+        font-weight: 400;
+        color: #546269;
+    }
+
+    /* price finished */
+    /* contact start */
+    .contact {
+        padding: 20px 0;
+    }
+
+    .contact-inner {
+        display: flex;
+        align-items: center;
+        gap: 1px;
+    }
+
+    .contact-inner-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+    }
+
+    .contact-inner-left-img {
+        width: 233px;
+        height: 210px;
+    }
+
+    .contact-inner-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        order: 2;
+        text-align: center;
+    }
+
+    .contact-inner-right-title {
+        font-size: 30px;
+        font-weight: 600;
+        margin: 0 0 20px 0;
+    }
+
+    .contact-inner-right-text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.6;
+        color: #8F95A5;
+        margin: 0 0 20px 0;
+    }
+
+    .contact-form {
+        display: flex;
+        gap: 5px;
+    }
+
+    .contact-form-input {
+        padding: 15px 50px 15px 20px;
+        border-radius: 5px;
+        border: 1px solid #D8D8D8;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .contact-form-input::placeholder {
+        color: #8F95A5;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .contact-form-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 40px;
+        background-color: #263238;
+        color: #FFFFFF;
+        text-decoration: none;
+        border-radius: 8px;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    /* contact finished */
+    /* footer start */
+
+    footer {
+        padding: 20px 0;
+    }
+
+    .footer-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-inner-left {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-inner-left-logo {
+        width: 89px;
+        height: 45px;
+    }
+
+    .footer-inner-right {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-inner-right-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        list-style: none;
+        flex-wrap: wrap;
+    }
+
+    .footer-inner-right-list-item {
+        display: flex;
+    }
+
+    .footer-inner-right-list-item-link {
+        font-size: 13px;
+        margin: 0;
+        font-weight: 400;
+        color: #8F95A5;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    /* footer finished */
 }
+
+
 
 
 @media only screen and (max-width: 320px) {
@@ -730,7 +1076,6 @@ footer {
     }
 
     /* header finished */
-
     /* learn start */
 
     .learn-inner {
@@ -776,87 +1121,448 @@ footer {
         margin: 0 0 16px 0;
     }
 
-
     /* learn finished */
     /* skill start */
     .skill {
-        padding: 50px 0 0 0;
+        padding: 20px 0;
     }
 
     .skill-title {
         font-size: 24px;
         font-weight: 600;
-        margin: 50px 0 32px 0;
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+
+    .skill-inner {
+        text-align: left;
+        align-items: flex-start;
     }
 
     .skill-inner-list {
-        grid-template-columns: 1fr;
-        gap: 20px;
-
+        display: flex;
+        flex-direction: column;
     }
 
     .skill-inner-list-item {
-        padding: 10px;
-        max-width: 290px;
-        width: 100%;
+        text-align: left;
     }
 
-    .speaking,
-    .writing,
-    .reading,
-    .skill-4 {
-        grid-row: auto;
-        grid-column: auto;
-    }
-
-    .skill-4 {
+    .skill-inner-list-item.speaking {
+        display: flex;
         flex-direction: column;
-        gap: 10px;
+        align-items: center;
+        border-radius: 5px;
+        text-align: left;
     }
 
-    .skill-inner-list-item-img,
-    .skill-listening-img {
-        width: 232px;
-        height: 154px;
-        margin: 0 auto 14px auto;
-    }
-
-    .skill-inner-list-item-title,
-    .skill-4-left-title {
-        font-size: 18px;
-        margin: 0;
-    }
-
-    .skill-inner-list-item-text,
-    .skill-4-left-text {
-        font-size: 13px;
+    .skill-speaking-img {
+        width: 213px;
+        height: 213px;
         margin-bottom: 10px;
     }
 
-    .listening {
-        flex-direction: column-reverse;
+    .skill-inner-list-item-title {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0 0 10px 0;
+        color: #263238;
+        text-align: left;
+    }
 
+    .skill-inner-list-item-text {
+        font-size: 13px;
+        font-weight: 400;
+        color: #8F95A5;
+        margin: 0 0 10px 0;
+        text-align: left;
     }
 
     .skill-inner-list-item-link {
-        padding: 14px 40px;
+        display: inline-block;
+        padding: 14px 43px;
         font-size: 14px;
+        font-weight: 500;
         text-align: left;
+    }
 
+    .listening-link {
+        display: inline-block;
+        padding: 14px 43px;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .speaking-text br {
+        display: none;
+    }
+
+    .skill-inner-list-item.writing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        text-align: left;
+    }
+
+    .skill-writing-img {
+        width: 204px;
+        height: 204px;
+        margin-bottom: 15px;
+    }
+
+    .skill-inner-list-item.reading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        text-align: left;
+    }
+
+    .skill-reading-img {
+        width: 236px;
+        height: 157px;
+        margin-bottom: 15px;
+    }
+
+    .skill-inner-list-item.listening {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        border-radius: 5px;
+        text-align: left;
+    }
+
+    .skill-inner-list-item {
+        text-align: left;
+    }
+
+    .skill-4 {
+        padding: 0;
+        text-align: left;
+    }
+
+    .skill-4-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .skill-4-left-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #263238;
+        margin: 0 0 12px 0;
+        text-align: left;
+    }
+
+    .skill-4-left-text {
+        font-size: 12px;
+        font-weight: 400;
+        margin: 0 0 15px 0;
+        color: #8F95A5;
+        text-align: left;
+    }
+
+    .skill-4-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .skill-listening-img {
+        width: 232px;
+        height: 154px;
     }
 
     /* skill finished */
+    /* about start */
     .about {
-        display: none;
+
+        padding: 10px 0;
     }
 
+    .about-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .about-inner-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-inner-left-title {
+        font-size: 24px;
+        font-weight: 600;
+        margin: 0 0 20px 0;
+        text-align: center;
+        order: 1;
+    }
+
+    .about-inner-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: 2;
+    }
+
+    .about-inner-right-img {
+        width: 283px;
+        height: 283px;
+    }
+
+    .about-inner-left-text {
+        font-size: 13px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #8F95A5;
+        order: 3;
+        margin: 0 0 20px 0;
+    }
+
+    .about-stats {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        order: 4;
+    }
+
+    .about-stats-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-stats-number {
+        font-size: 24px;
+        font-weight: 600;
+        max-width: 0 0 8px 0;
+        color: #2A3246;
+    }
+
+    .about-stats-label {
+        font-size: 15px;
+        font-weight: 400;
+        color: #8F95A5;
+    }
+
+    /* about finished */
+    /* price start */
     .price {
-        display: none;
+        padding: 20px 0;
     }
+
+    .price-title {
+        font-size: 24px;
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+
+
+    .price-inner-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .price-inner-list-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .price-inner-list-item-img {
+        width: 248px;
+        height: 248px;
+        margin-bottom: 15px;
+    }
+
+    .price-inner-list-item-img-1 {
+        width: 257px;
+        height: 197px;
+        margin-bottom: 15px;
+    }
+
+    .price-inner-list-item-img-2 {
+        width: 241px;
+        height: 241px;
+        margin-bottom: 15px;
+    }
+
+    .price-inner-list-item-title {
+        font-size: 18px;
+        margin: 0 0 12px 0;
+        color: #263238;
+        font-weight: 600;
+    }
+
+    .price-inner-list-item-text {
+        font-size: 13px;
+        color: #8F95A5;
+        font-weight: 400;
+        margin: 0 0 15px 0;
+    }
+
+    .price-inner-list-item-price {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        gap: 6px;
+        border-radius: 8px;
+        background-color: #F5F5F5;
+    }
+
+    .price-amount {
+        font-size: 18px;
+        font-weight: 400;
+        color: #263238;
+    }
+
+    .price-period {
+        font-size: 14px;
+        font-weight: 400;
+        color: #546269;
+    }
+
+    /* price finished */
+    /* contact start */
     .contact {
-        display: none;
+        padding: 10px 0;
     }
+
+    .contact-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contact-inner-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: 2;
+    }
+
+    .contact-inner-left-img {
+        width: 252px;
+        height: 228px;
+    }
+
+    .contact-inner-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        order: 1;
+        text-align: center;
+    }
+
+    .contact-inner-right-title {
+        font-size: 24px;
+        font-weight: 600;
+        margin: 0 0 10px 0;
+    }
+
+    .contact-inner-right-text {
+        font-size: 14px;
+        color: #8F95A5;
+        font-weight: 400;
+        margin: 0 0 15px 0;
+        padding: 0 10px;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        max-width: 280px;
+    }
+
+    .contact-form-input {
+        padding: 14px 18px;
+        border-radius: 5px;
+        border: 1px solid #D8D8D8;
+        font-size: 13px;
+        padding: 16px 100px 16px 20px;
+    }
+
+    .contact-form-input::placeholder {
+        color: #8F95A5;
+    }
+
+    .contact-form-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #263238;
+        color: #FFFF;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    /* contact finished */
+    /* footer start */
     footer {
-        display: none;
+        padding: 10px 0;
     }
+
+    .footer-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .footer-inner-left {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-inner-left-logo {
+        width: 71px;
+        height: 36px;
+    }
+
+    .footer-inner-right {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-inner-right-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        list-style: none;
+        flex-wrap: wrap;
+    }
+
+    .footer-inner-right-list-item {
+        display: flex;
+    }
+
+    .footer-inner-right-list-item-link {
+        font-size: 11px;
+        font-weight: 500;
+        color: #8F95A5;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    /* footer finished */
 }
